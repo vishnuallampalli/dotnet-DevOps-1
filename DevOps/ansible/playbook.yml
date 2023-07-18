@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - prerequisites
+- hosts: Master
+  become: yes
+  roles:
+    - master
+- hosts: Worker
+  become: yes
+  roles:
+    - worker
+

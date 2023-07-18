@@ -1,0 +1,6 @@
+---
+# handlers file for prerequisites
+- name: Restart kubelet service
+  service:
+    name: kubelet
+    state: restarted
